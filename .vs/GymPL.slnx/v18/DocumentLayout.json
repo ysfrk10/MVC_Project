@@ -1,0 +1,316 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\views\\trainer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\views\\trainer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\controllers\\gymcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\controllers\\gymcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\views\\gym\\addmember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\views\\gym\\addmember.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\viewmodel\\trainer\\addtrainervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\viewmodel\\trainer\\addtrainervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymbl\\dtos\\trainerdtos\\addtrainerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\dtos\\trainerdtos\\addtrainerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymdal\\repos\\trainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|solutionrelative:gymdal\\repos\\trainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymdal\\entities\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|solutionrelative:gymdal\\entities\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymdal\\interfaces\\itrainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BEE93D5-E196-8F38-553D-1A179AE51F5B}|GymDAL\\GymDAL.csproj|solutionrelative:gymdal\\interfaces\\itrainerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gympl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E207F15-004A-6B36-F9F5-8204DF8DE832}|GymPL\\GymPL.csproj|solutionrelative:gympl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymbl\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymbl\\services\\gymservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\services\\gymservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymbl\\services\\trainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\services\\trainerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|d:\\iti\\22.mvc mohamed mahdy\\gymmanagment\\gympl\\gymbl\\dtos\\adddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B6AA68-BE19-8187-CACE-C019D936854A}|GymBL\\GymBL.csproj|solutionrelative:gymbl\\dtos\\adddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Trainer\\Index.cshtml",
+              "RelativeDocumentMoniker": "GymPL\\Views\\Trainer\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Trainer\\Index.cshtml",
+              "RelativeToolTip": "GymPL\\Views\\Trainer\\Index.cshtml",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAAAGMBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T23:16:13.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "GymPL\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "GymPL\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T23:16:11.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddTrainerVM.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\ViewModel\\Trainer\\AddTrainerVM.cs",
+              "RelativeDocumentMoniker": "GymPL\\ViewModel\\Trainer\\AddTrainerVM.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\ViewModel\\Trainer\\AddTrainerVM.cs",
+              "RelativeToolTip": "GymPL\\ViewModel\\Trainer\\AddTrainerVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T22:08:10.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddMember.cshtml",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Gym\\AddMember.cshtml",
+              "RelativeDocumentMoniker": "GymPL\\Views\\Gym\\AddMember.cshtml",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Gym\\AddMember.cshtml",
+              "RelativeToolTip": "GymPL\\Views\\Gym\\AddMember.cshtml",
+              "ViewState": "AgIAAL8BAAAAAAAAAAAAANABAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T21:52:43.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GymPL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GymPL\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T21:46:34.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Program.cs",
+              "RelativeDocumentMoniker": "GymPL\\Program.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Program.cs",
+              "RelativeToolTip": "GymPL\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:44:33.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainerController.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Controllers\\TrainerController.cs",
+              "RelativeDocumentMoniker": "GymPL\\Controllers\\TrainerController.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Controllers\\TrainerController.cs",
+              "RelativeToolTip": "GymPL\\Controllers\\TrainerController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:29:10.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GymServices.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Services\\GymServices.cs",
+              "RelativeDocumentMoniker": "GymBL\\Services\\GymServices.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Services\\GymServices.cs",
+              "RelativeToolTip": "GymBL\\Services\\GymServices.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwF4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:19:04.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITrainerService.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Interfaces\\ITrainerService.cs",
+              "RelativeDocumentMoniker": "GymBL\\Interfaces\\ITrainerService.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Interfaces\\ITrainerService.cs",
+              "RelativeToolTip": "GymBL\\Interfaces\\ITrainerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:15:21.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\Entities\\Trainer.cs",
+              "RelativeDocumentMoniker": "GymDAL\\Entities\\Trainer.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\Entities\\Trainer.cs",
+              "RelativeToolTip": "GymDAL\\Entities\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:13:26.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddDTO.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\DTOS\\AddDTO.cs",
+              "RelativeDocumentMoniker": "GymBL\\DTOS\\AddDTO.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\DTOS\\AddDTO.cs",
+              "RelativeToolTip": "GymBL\\DTOS\\AddDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:12:54.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddTrainerDTO.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\DTOS\\TrainerDTOS\\AddTrainerDTO.cs",
+              "RelativeDocumentMoniker": "GymBL\\DTOS\\TrainerDTOS\\AddTrainerDTO.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\DTOS\\TrainerDTOS\\AddTrainerDTO.cs",
+              "RelativeToolTip": "GymBL\\DTOS\\TrainerDTOS\\AddTrainerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:12:50.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TrainerServices.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Services\\TrainerServices.cs",
+              "RelativeDocumentMoniker": "GymBL\\Services\\TrainerServices.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymBL\\Services\\TrainerServices.cs",
+              "RelativeToolTip": "GymBL\\Services\\TrainerServices.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wEgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T21:09:31.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITrainerRepo.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\InterFaces\\ITrainerRepo.cs",
+              "RelativeDocumentMoniker": "GymDAL\\InterFaces\\ITrainerRepo.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\InterFaces\\ITrainerRepo.cs",
+              "RelativeToolTip": "GymDAL\\InterFaces\\ITrainerRepo.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIAwwA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T20:53:52.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainerRepo.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\Repos\\TrainerRepo.cs",
+              "RelativeDocumentMoniker": "GymDAL\\Repos\\TrainerRepo.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymDAL\\Repos\\TrainerRepo.cs",
+              "RelativeToolTip": "GymDAL\\Repos\\TrainerRepo.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwC4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T20:53:14.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GymController.cs",
+              "DocumentMoniker": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Controllers\\GymController.cs",
+              "RelativeDocumentMoniker": "GymPL\\Controllers\\GymController.cs",
+              "ToolTip": "D:\\ITI\\22.MVC Mohamed Mahdy\\GymManagment\\GymPL\\GymPL\\Controllers\\GymController.cs",
+              "RelativeToolTip": "GymPL\\Controllers\\GymController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T19:40:19.963Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

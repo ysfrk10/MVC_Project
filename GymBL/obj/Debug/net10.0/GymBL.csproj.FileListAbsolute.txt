@@ -1,0 +1,15 @@
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\bin\Debug\net10.0\GymBL.deps.json
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\bin\Debug\net10.0\GymBL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\bin\Debug\net10.0\GymBL.pdb
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.AssemblyInfoInputs.cache
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.AssemblyInfo.cs
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.csproj.CoreCompileInputs.cache
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\refint\GymBL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.pdb
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\ref\GymBL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\bin\Debug\net10.0\GymDAL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\bin\Debug\net10.0\GymDAL.pdb
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.csproj.AssemblyReference.cache
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Debug\net10.0\GymBL.csproj.Up2Date
