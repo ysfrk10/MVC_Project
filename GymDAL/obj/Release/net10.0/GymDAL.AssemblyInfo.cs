@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e4165f2aaf51d66726c881986a7ed6b8e10226f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

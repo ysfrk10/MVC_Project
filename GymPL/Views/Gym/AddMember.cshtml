@@ -424,7 +424,8 @@
                 </form>
 
                 <!-- Trainer Form -->
-                <form id="trainerForm" asp-action="AddTrainer" asp-controller="Trainer" method="post" style="display: none;">
+              
+                <form enctype="multipart/form-data" id="trainerForm" asp-action="AddTrainer" asp-controller="Trainer" method="post" style="display: none;">
                     @Html.AntiForgeryToken()
 
                     <div class="form-group">
@@ -462,7 +463,7 @@
 
                     <div class="form-group">
                         <label><i class="fas fa-user"></i> Image Link</label>
-                        <input  type="text" class="form-control" placeholder="Enter Image Link" />
+                        <input asp-for="ImgPath" type="file" class="form-control" />
                     </div>
 
                     <button type="submit" class="btn-register">

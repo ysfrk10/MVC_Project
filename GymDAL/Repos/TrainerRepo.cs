@@ -4,6 +4,7 @@ using System.Text;
 using GymDAL.Data;
 using GymDAL.Entities;
 using GymDAL.InterFaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GymDAL.Repos
 {
@@ -52,9 +53,12 @@ namespace GymDAL.Repos
         #region ReomveTrainer
         public void ReomveTrainer(int id)
         {
+
             var trainer = _Context.Trainers.Find(id);
             _Context.Trainers.Remove(trainer);
             _Context.SaveChanges();
+
+
         }
         #endregion
 

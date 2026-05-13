@@ -13,3 +13,4 @@ D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Release\net10.0\GymBL.d
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Release\net10.0\refint\GymBL.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Release\net10.0\GymBL.pdb
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Release\net10.0\ref\GymBL.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymBL\obj\Release\net10.0\GymBL.sourcelink.json

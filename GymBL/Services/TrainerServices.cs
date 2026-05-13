@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using GymBL.DTOS;
 using GymBL.DTOS.TrainerDTOS;
 using GymBL.Interfaces;
 using GymDAL.Data;
@@ -30,6 +31,7 @@ namespace GymBL.Services
                 ImgPath = dto.ImgPath,
             });
         }
+
         #endregion
 
         #region GetByID
@@ -53,6 +55,7 @@ namespace GymBL.Services
             var dtos = new List<AddTrainerDTO>();
             return trainers.Select(x => new AddTrainerDTO()
             {
+                Id = x.Id,
                 Name = x.Name,
                 PhoneNumber = x.PhoneNumber,
                 ImgPath = x.ImgPath,
@@ -64,10 +67,16 @@ namespace GymBL.Services
         public void EditTrainer(AddTrainerDTO m)
         {
             var current = _repo.GetTrainers(m.Id);
+            if (current == null)
+            {
+                throw new Exception("Trainer Not Found");
+            }
+
             current.Name = m.Name;
             current.PhoneNumber = m.PhoneNumber;
-            current.ImgPath = m.ImgPath;
+            _repo.EditTrainer(current);
         }
+
         #endregion
 
         #region ReomveTrainer
@@ -75,6 +84,8 @@ namespace GymBL.Services
         {
             _repo.ReomveTrainer(id);
         }
+
+
         #endregion
     }
 }

@@ -1,0 +1,633 @@
+﻿@using GymBL.DTOS.TrainerDTOS
+@using GymPL.ViewModel
+@using GymPL.ViewModel.Trainer
+@model EditTrainerVM
+
+@{
+    ViewData["Title"] = "Edit Trainer";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Elite Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+            :root {
+                --bg-primary: #0a0a0a;
+                --bg-secondary: #0f0f0f;
+                --bg-card: #141414;
+                --bg-elevated: #1a1a1a;
+                --accent-primary: #e63946;
+                --accent-secondary: #ff6b6b;
+                --text-primary: #ffffff;
+                --text-secondary: #b0b0b0;
+                --text-muted: #6c757d;
+                --border-color: #2a2a2a;
+                --gradient-accent: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%);
+                --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.3);
+                --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+                --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.5);
+                --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+                min-height: 100vh;
+                background: var(--bg-primary);
+                position: relative;
+            }
+
+                /* Animated Background */
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: radial-gradient(circle at 20% 50%, rgba(230, 57, 70, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
+                    z-index: -1;
+                }
+
+            /* Navigation */
+            .navbar {
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: blur(10px);
+                padding: 1rem 0;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .navbar-brand {
+                font-size: 1.8rem;
+                font-weight: 800;
+                background: var(--gradient-accent);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent !important;
+                letter-spacing: -0.5px;
+            }
+
+            .nav-link {
+                color: var(--text-secondary) !important;
+                font-weight: 500;
+                transition: var(--transition);
+                margin: 0 0.5rem;
+            }
+
+                .nav-link:hover {
+                    color: var(--accent-primary) !important;
+                }
+
+            /* Main Container */
+            .edit-container {
+                min-height: calc(100vh - 200px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 20px;
+            }
+
+            .edit-card {
+                max-width: 550px;
+                width: 100%;
+                background: var(--bg-card);
+                border-radius: 24px;
+                box-shadow: var(--shadow-lg);
+                overflow: hidden;
+                border: 1px solid var(--border-color);
+                animation: slideUp 0.5s ease;
+            }
+
+            @@keyframes slideUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* Card Header */
+            .card-header {
+                background: linear-gradient(135deg, rgba(230, 57, 70, 0.15) 0%, rgba(255, 107, 107, 0.05) 100%);
+                padding: 30px;
+                text-align: center;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+                .card-header i {
+                    font-size: 48px;
+                    background: var(--gradient-accent);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    margin-bottom: 10px;
+                }
+
+                .card-header h2 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: var(--text-primary);
+                }
+
+                .card-header p {
+                    margin: 8px 0 0;
+                    color: var(--text-secondary);
+                    font-size: 0.9rem;
+                }
+
+            /* Card Body */
+            .card-body {
+                padding: 30px;
+            }
+
+            /* Form Groups */
+            .form-group {
+                margin-bottom: 24px;
+            }
+
+                .form-group label {
+                    font-weight: 600;
+                    color: var(--text-primary);
+                    margin-bottom: 8px;
+                    display: block;
+                    font-size: 0.9rem;
+                }
+
+                    .form-group label i {
+                        color: var(--accent-primary);
+                        margin-right: 8px;
+                    }
+
+            .required:after {
+                content: '*';
+                color: var(--accent-primary);
+                margin-left: 4px;
+            }
+
+            .form-control {
+                width: 100%;
+                padding: 12px 16px;
+                background: var(--bg-elevated);
+                border: 1px solid var(--border-color);
+                border-radius: 12px;
+                font-size: 0.95rem;
+                color: var(--text-primary);
+                transition: var(--transition);
+            }
+
+                .form-control:focus {
+                    border-color: var(--accent-primary);
+                    outline: none;
+                    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+                    background: var(--bg-elevated);
+                    color: var(--text-primary);
+                }
+
+                .form-control::placeholder {
+                    color: var(--text-muted);
+                }
+
+            /* Image Preview */
+            .image-preview-container {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .image-preview {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid var(--accent-primary);
+                background: var(--bg-elevated);
+                margin-bottom: 15px;
+                box-shadow: var(--shadow-sm);
+            }
+
+            .image-placeholder {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background: var(--bg-elevated);
+                border: 3px dashed var(--border-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 15px;
+            }
+
+                .image-placeholder i {
+                    font-size: 48px;
+                    color: var(--text-muted);
+                }
+
+            .image-hint {
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                margin-top: 8px;
+            }
+
+            /* Current Image Display */
+            .current-image {
+                background: var(--bg-elevated);
+                border-radius: 12px;
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid var(--border-color);
+            }
+
+                .current-image p {
+                    margin: 0;
+                    font-size: 0.85rem;
+                    color: var(--text-secondary);
+                }
+
+                .current-image a {
+                    color: var(--accent-primary);
+                    text-decoration: none;
+                    word-break: break-all;
+                }
+
+            /* Validation */
+            .text-danger {
+                color: var(--accent-primary);
+                font-size: 0.75rem;
+                margin-top: 5px;
+                display: block;
+            }
+
+            /* Alert */
+            .alert-success {
+                background: rgba(40, 167, 69, 0.15);
+                border: 1px solid rgba(40, 167, 69, 0.3);
+                border-radius: 12px;
+                padding: 12px 16px;
+                margin-bottom: 20px;
+                color: #28a745;
+            }
+
+            .alert-danger {
+                background: rgba(230, 57, 70, 0.15);
+                border: 1px solid rgba(230, 57, 70, 0.3);
+                border-radius: 12px;
+                padding: 12px 16px;
+                margin-bottom: 20px;
+                color: var(--accent-primary);
+            }
+
+                .alert-success i, .alert-danger i {
+                    margin-right: 8px;
+                }
+
+            /* Buttons */
+            .btn-update {
+                width: 100%;
+                padding: 14px;
+                background: var(--gradient-accent);
+                color: white;
+                border: none;
+                border-radius: 50px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: var(--transition);
+                margin-top: 10px;
+            }
+
+                .btn-update:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
+                }
+
+                .btn-update:active {
+                    transform: translateY(0);
+                }
+
+            .btn-cancel {
+                width: 100%;
+                padding: 12px;
+                background: transparent;
+                color: var(--text-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 50px;
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: var(--transition);
+                margin-top: 12px;
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+            }
+
+                .btn-cancel:hover {
+                    background: rgba(255, 255, 255, 0.05);
+                    color: var(--text-primary);
+                    border-color: var(--accent-primary);
+                }
+
+            /* Footer */
+            footer {
+                background: var(--bg-primary);
+                border-top: 1px solid var(--border-color);
+                padding: 30px 0 20px;
+                margin-top: 60px;
+            }
+
+            .footer-content {
+                text-align: center;
+                color: var(--text-muted);
+                font-size: 0.85rem;
+            }
+
+                .footer-content a {
+                    color: var(--accent-primary);
+                    text-decoration: none;
+                }
+
+            /* Responsive */
+            @@media (max-width: 768px) {
+                .edit-container {
+                    padding: 20px 16px;
+                }
+
+                .card-header {
+                    padding: 25px 20px;
+                }
+
+                .card-body {
+                    padding: 25px 20px;
+                }
+
+                .image-preview, .image-placeholder {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            /* Loading State */
+            .loading {
+                opacity: 0.7;
+                pointer-events: none;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">GyMAWY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Trainer")">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Gym")">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Edit Container -->
+    <div class="edit-container">
+        <div class="edit-card">
+            <div class="card-header">
+                <i class="fas fa-chalkboard-user"></i>
+                <h2>Edit Trainer</h2>
+                <p>Update trainer information ✏️</p>
+            </div>
+
+            <div class="card-body">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert-success">
+                        <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+                    </div>
+                }
+
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert-danger">
+                        <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+                    </div>
+                }
+                        
+                <form id="editTrainerForm" asp-action="EditTrainer" asp-controller="Trainer"  method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for=Id />
+
+               
+
+               
+
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label class="required"><i class="fas fa-user"></i> Full Name</label>
+                        <input asp-for=Name type="text" id="Name" name="Name" class="form-control"
+                               placeholder="Enter trainer full name"
+                             />
+                        <span id="nameError" class="text-danger"></span>
+                    </div>
+
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                        <label class="required"><i class="fas fa-phone-alt"></i> Phone Number</label>
+                        <input asp-for="PhoneNumber" type="tel" id="PhoneNumber" name="PhoneNumber" class="form-control"
+                               placeholder="ex: 01234567890" />
+                        <span id="phoneError" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn-update" id="submitBtn">
+                        <i class="fas fa-save"></i> Update Trainer
+                    </button>
+
+                    <a href="@Url.Action("Index", "Trainer")" class="btn-cancel">
+                        <i class="fas fa-times"></i> Cancel
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // Load trainer data on page load
+        const trainerId = @Model.Id;
+
+        async function loadTrainerData() {
+        try {
+        const response = await fetch(`/Trainer/GetTrainerById?id=${trainerId}`);
+        if (response.ok) {
+        const trainer = await response.json();
+
+        // Populate form fields
+        document.getElementById('Name').value = trainer.name || '';
+        document.getElementById('PhoneNumber').value = trainer.phoneNumber || '';
+        document.getElementById('ImagePath').value = trainer.imagePath || '';
+
+        // Update image preview
+        updateImagePreview(trainer.imagePath);
+        } else {
+        console.error('Failed to load trainer data');
+        showImagePlaceholder();
+        }
+        } catch (error) {
+        console.error('Error loading trainer:', error);
+        showImagePlaceholder();
+        }
+        }
+
+        function updateImagePreview(imageUrl) {
+        const wrapper = document.getElementById('imagePreviewWrapper');
+        if (imageUrl && imageUrl.trim() !== '') {
+        wrapper.innerHTML = `
+        <div class="current-image">
+        <p><i class="fas fa-image"></i> Current Image:</p>
+        <a href="${imageUrl}" target="_blank">${imageUrl.length > 50 ? imageUrl.substring(0, 47) + '...' : imageUrl}</a>
+        </div>
+        <div style="text-align: center;">
+        <img src="${imageUrl}" alt="Trainer Preview" class="image-preview"
+        onerror="this.onerror=null; this.src='https://placehold.co/150x150/1a1a1a/6c757d?text=No+Image';">
+        </div>
+        `;
+        } else {
+        showImagePlaceholder();
+        }
+        }
+
+        function showImagePlaceholder() {
+        const wrapper = document.getElementById('imagePreviewWrapper');
+        wrapper.innerHTML = `
+        <div class="image-placeholder">
+        <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="image-hint text-center">
+        <i class="fas fa-info-circle"></i> No image available
+        </div>
+        `;
+        }
+
+        // Image preview from URL input
+        document.getElementById('ImagePath').addEventListener('input', function() {
+        const url = this.value.trim();
+        if (url) {
+        const wrapper = document.getElementById('imagePreviewWrapper');
+        wrapper.innerHTML = `
+        <div style="text-align: center;">
+        <img src="${url}" alt="Preview" class="image-preview"
+        onerror="this.onerror=null; this.src='https://placehold.co/150x150/1a1a1a/6c757d?text=Invalid+URL';">
+        </div>
+        `;
+        } else {
+        showImagePlaceholder();
+        }
+        });
+
+        // Image preview from file upload
+        document.getElementById('ImageFile').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+        const wrapper = document.getElementById('imagePreviewWrapper');
+        wrapper.innerHTML = `
+        <div style="text-align: center;">
+        <img src="${event.target.result}" alt="Preview" class="image-preview">
+        </div>
+        `;
+        // Clear URL input when file is selected
+        document.getElementById('ImagePath').value = '';
+        };
+        reader.readAsDataURL(file);
+        }
+        });
+
+        // Form validation
+        document.getElementById('editTrainerForm').addEventListener('submit', function(e) {
+        let isValid = true;
+
+        // Validate Name
+        const name = document.getElementById('Name').value.trim();
+        if (!name) {
+        document.getElementById('nameError').textContent = 'Name is required';
+        isValid = false;
+        } else if (name.length < 2) {
+        document.getElementById('nameError').textContent = 'Name must be at least 2 characters';
+        isValid = false;
+        } else {
+        document.getElementById('nameError').textContent = '';
+        }
+
+        // Validate Phone Number
+        const phone = document.getElementById('PhoneNumber').value.trim();
+        const phoneRegex = /^[0-9]{10,15}$/;
+        if (!phone) {
+        document.getElementById('phoneError').textContent = 'Phone number is required';
+        isValid = false;
+        } else if (!phoneRegex.test(phone.replace(/[+\s-]/g, ''))) {
+        document.getElementById('phoneError').textContent = 'Please enter a valid phone number (10-15 digits)';
+        isValid = false;
+        } else {
+        document.getElementById('phoneError').textContent = '';
+        }
+
+        // Validate Image Path (optional but validate URL format if provided)
+        const imagePath = document.getElementById('ImagePath').value.trim();
+        if (imagePath && !isValidUrl(imagePath) && !imagePath.startsWith('/')) {
+        document.getElementById('imagePathError').textContent = 'Please enter a valid URL or path';
+        isValid = false;
+        } else {
+        document.getElementById('imagePathError').textContent = '';
+        }
+
+        if (!isValid) {
+        e.preventDefault();
+        } else {
+        const btn = document.getElementById('submitBtn');
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Updating...';
+        btn.classList.add('loading');
+        }
+        });
+
+        function isValidUrl(string) {
+        try {
+        new URL(string);
+        return true;
+        } catch (_) {
+        return false;
+        }
+        }
+
+        // Load trainer data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+        loadTrainerData();
+        });
+    </script>
+</body>
+</html>

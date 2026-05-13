@@ -369,7 +369,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">ELITE GYM</a>
+            <a class="navbar-brand" href="/">GyMAWY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -402,36 +402,41 @@
                         <div class="col-lg-4 col-md-6 mb-4">
                             <div class="trainer-card h-100">
                                 <div class="trainer-image position-relative">
-                                    <img id ="profile_img" src= "~/images/user.jpg" alt="@trainer.Name" class="img-fluid" />
-
+                                    <img id="profile_img"
+                                         src="@(string.IsNullOrEmpty(trainer.ImgPath)
+                                                     ? Url.Content("~/images/user.png")
+                                                     : Url.Content("~/images/" + trainer.ImgPath))"
+                                         alt="Profile"
+                                         class="img-fluid"
+                                         width="250" />
+                                    
                                     <!-- الأزرار تظهر عند المرور بالماوس -->
                                     <div class="action-buttons text-center m-3">
-                                        <a href="javascript:void(0);"
-                                           class="edit-trainer-link"
-                                           data-id="@trainer.Id"
-                                           data-name="@trainer.Name"
-                                           data-imgpath="@trainer.ImgPath"
-                                           data-bs-toggle="modal"
-                                           data-bs-target="#editTrainerModal">
+                                        <a asp-action="EditTrainer"
+                                        asp-controller="Trainer"
+                                        asp-route-id="@trainer.Id"
+                                        >
                                             <i class="fas fa-edit"></i> Edit
                                         </a>
-
                                         <span class="separator">|</span>
 
-                                        <a href="javascript:void(0);"
-                                           class="delete-trainer-link text-danger"
-                                           data-id="@trainer.Id"
-                                           data-name="@trainer.Name"
-                                           data-bs-toggle="modal"
-                                           data-bs-target="#deleteTrainerModal">
+                                        <a class="text-danger"
+                                           asp-action="RemoveTrainer"
+                                           asp-controller="Trainer"
+                                            asp-route-id="@trainer.Id">
                                             <i class="fas fa-trash"></i> Remove
                                         </a>
+                               
                                     </div>
 
                                 </div>
 
                                 <div class="trainer-info ">
-                                    <h3>@trainer.Name</h3>     
+                                    <h3 asp-route-id="@trainer.Id">@($"{trainer.Name}")</h3>
+                                </div>
+                                <div class="trainer-info d-flex gap-3 justify-content-center align-items-center  ">
+                                    <i class="fas fa-phone"></i>
+                                    <h3 class="flex" asp-route-id="@trainer.Id">@($"{trainer.PhoneNumber}")</h3>
                                 </div>
                             </div>
                         </div>

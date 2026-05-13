@@ -62,6 +62,12 @@ D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\wwwroot\lib\bootstrap\dist\
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\03c4c079-7d55-4d23-a210-658a07b34d9d_file.jpg
+wwwroot\images\65ced69f-ef6f-477b-96f2-7b4a3ac0b2a3_file.jpg
+wwwroot\images\7f514732-12a3-40d2-b4da-f3039e4f8f36_file.jpg
+wwwroot\images\9d45db85-de80-486f-a545-a8198276b2b5_file.jpg
+wwwroot\images\a63e327d-ba46-40e9-885c-4019e918108f_file.jpg
+wwwroot\images\c38107db-bc60-4afc-986a-881f4d731372_profile.png
 wwwroot\images\user.jpg
 wwwroot\images\user.png
 wwwroot\js\site.js
