@@ -614,6 +614,47 @@
                 .contact-info, .contact-form {
                     margin-bottom: 20px;
                 }
+
+            }
+
+
+            /* Join Us Button */
+            .btn-join-us {
+                background: var(--gradient-accent);
+                color: white;
+                padding: 8px 22px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                transition: var(--transition);
+                display: inline-block;
+                text-decoration: none;
+                border: none;
+                margin-left: 10px;
+            }
+
+                .btn-join-us:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
+                    color: white;
+                }
+
+                .btn-join-us i {
+                    margin-right: 6px;
+                }
+
+            /* Responsive */
+@@media (max-width: 991px) {
+                .btn-join-us {
+                    margin-top: 10px;
+                    text-align: center;
+                    display: inline-block;
+                    width: auto;
+                }
+
+                .navbar-nav .nav-item {
+                    text-align: center;
+                }
             }
     </style>
 </head>
@@ -622,17 +663,38 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">GeMAWY</a>
+            <a class="navbar-brand" href="#">GyMAWY </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn-join-us" asp-action="Register" asp-controller="Auth" asp-route-mode="register">
+                                <i class="fas fa-user-plus"></i> Join Us
+                            </a>
+                        </li>
+                    }
+                     @if (User.Identity.IsAuthenticated)
+                {
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Gym")">Members</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+                        <li>
+                            <form asp-action="Logout" asp-controller="Auth" method="post" id="logoutForm">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-danger">
+                                    Logout
+                                </button>
+                            </form>
+                        </li>
+                        }
+                    </ul>
             </div>
         </div>
     </nav>

@@ -8,12 +8,12 @@
             {
                 //1) Get Directory
                 string basePath = Directory.GetCurrentDirectory();
-                string filePath = Path.Combine(basePath, "wwwroot", DirName);
+                string FolderPath = Path.Combine(basePath, "wwwroot", DirName);
 
                 ////2)Get File
                 string FileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(file.FileName);
                 //Compine
-                string FullPath = Path.Combine(filePath, FileName);
+                string FullPath = Path.Combine(FolderPath, FileName);
 
                 using (var s = new FileStream(FullPath, FileMode.Create))
                 {

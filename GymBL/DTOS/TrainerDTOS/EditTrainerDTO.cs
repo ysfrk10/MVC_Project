@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.AspNetCore.Http;
-
-namespace GymBL.DTOS.TrainerDTOS
+﻿namespace GymBL.DTOS.TrainerDTOS
 {
     public class EditTrainerDTO
     {

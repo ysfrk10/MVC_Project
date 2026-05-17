@@ -131,10 +131,33 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" asp-action="Index" asp-controller="Home">GeMAWY</a>
+                <a class="navbar-brand" asp-action="Index" asp-controller="Home">GyMAWY</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
-                </button>          
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                        }
+                        else
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Trainer">Trainers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-action="ViewAllMembers" asp-controller="Gym">Members</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                            <li class="nav-item">
+                                <form asp-action="Logout" asp-controller="Auth" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="nav-link btn btn-link">Logout</button>
+                                </form>
+                            </li>
+                        }
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -147,7 +170,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-links">
-                    <h4>GeMAWY</h4>
+                    <h4>GyMAWY</h4>
                     <p>Transform your body, unlock your potential. Join the Elite family today.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -159,14 +182,18 @@
           
 
             <div class="copyright">
-                <p>&copy; 2025 GeMAWY. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: #e63946;"></i> for fitness</p>
+                <p>&copy; 2025 GeMAWY. All Rights Reserved. Designed By Yousef Farouk <i class="fas fa-heart" style="color: #e63946;"></i> for fitness</p>
             </div>
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

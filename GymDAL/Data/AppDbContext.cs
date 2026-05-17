@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GymDAL.Entities;
-using Microsoft.EntityFrameworkCore;
-
-namespace GymDAL.Data
+﻿namespace GymDAL.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Member> Members { get; set; }
         public DbSet<Trainer> Trainers { get; set; }

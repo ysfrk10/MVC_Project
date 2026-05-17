@@ -7,9 +7,11 @@ D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\GymPL.d
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\GymPL.runtimeconfig.json
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\GymPL.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\GymPL.pdb
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\AutoMapper.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Azure.Core.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Azure.Identity.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Humanizer.dll
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Microsoft.Bcl.Cryptography.dll
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\bin\Release\net10.0\Microsoft.Build.Framework.dll
@@ -145,6 +147,7 @@ D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.c
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.MvcApplicationPartsAssemblyInfo.cache
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.RazorAssemblyInfo.cache
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.RazorAssemblyInfo.cs
+D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.sourcelink.json
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\rjimswa.dswa.cache.json
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\rjsmrazor.dswa.cache.json
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\rjsmcshtml.dswa.cache.json
@@ -227,4 +230,3 @@ D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\refint\
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.pdb
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.genruntimeconfig.cache
 D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\ref\GymPL.dll
-D:\ITI\22.MVC Mohamed Mahdy\GymManagment\GymPL\GymPL\obj\Release\net10.0\GymPL.sourcelink.json

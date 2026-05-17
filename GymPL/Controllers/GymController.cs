@@ -1,10 +1,12 @@
 ﻿using GymBL.DTOS;
-using GymBL.Interfaces;
+using GymBL.Services.Interfaces;
 using GymPL.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymPL.Controllers
 {
+    [Authorize]
     public class GymController : Controller
     {
         #region D INJECT    

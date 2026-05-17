@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GymDAL.Entities
+﻿namespace GymDAL.Entities
 {
     public class Member
     {
-        public int Id { get; set; }
+        public int Id { get; set; }//best practice make it private set
         public string Name { get; set; } = string.Empty;
+
         public string PhoneNumber { get; set; } = string.Empty;
         public DateTime JoinDate { get; set; }
 

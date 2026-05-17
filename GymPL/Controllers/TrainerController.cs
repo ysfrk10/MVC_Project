@@ -1,14 +1,16 @@
 ﻿using GymBL.DTOS;
 using GymBL.DTOS.TrainerDTOS;
-using GymBL.Interfaces;
+using GymBL.Services.Interfaces;
 using GymDAL.Entities;
 using GymPL.Helper;
 using GymPL.ViewModel;
 using GymPL.ViewModel.Trainer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymPL.Controllers
 {
+    [Authorize]
     public class TrainerController : Controller
     {
         #region Depandancy injection

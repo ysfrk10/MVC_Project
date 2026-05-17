@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GymBL.DTOS
+﻿namespace GymBL.DTOS
 {
     public class EditDTO
     {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using GymDAL.Entities;
-
-namespace GymBL.DTOS
+﻿namespace GymBL.DTOS
 {
     public class AddDTO
     {

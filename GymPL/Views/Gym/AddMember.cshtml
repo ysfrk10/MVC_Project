@@ -3,17 +3,10 @@
 
 @{
     ViewData["Title"] = "Add New Member";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Elite Gym</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
             :root {
                 --bg-primary: #0a0a0a;
@@ -345,9 +338,13 @@
                 background: var(--bg-elevated);
                 color: var(--text-primary);
             }
+
+            .register-container{
+                margin:80px auto;
+            
+            }
     </style>
-</head>
-<body>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -438,29 +435,6 @@
                         <input name="PhoneNumber" class="form-control" placeholder="ex: 01234567890" />
                     </div>
 
-                    @* <div class="form-group">
-                        <label class="required"><i class="fas fa-certificate"></i> Specialization</label>
-                        <select name="Specialization" class="form-select">
-                            <option value="">Select Specialization</option>
-                            <option value="Personal Trainer">Personal Trainer</option>
-                            <option value="Yoga Instructor">Yoga Instructor</option>
-                            <option value="HIIT Coach">HIIT Coach</option>
-                            <option value="Bodybuilding Coach">Bodybuilding Coach</option>
-                            <option value="Nutritionist">Nutritionist</option>
-                            <option value="CrossFit Trainer">CrossFit Trainer</option>
-                        </select>
-                    </div> *@
-
-                  @*   <div class="form-group">
-                        <label><i class="fas fa-briefcase"></i> Experience (Years)</label>
-                        <input name="Experience" type="number" class="form-control" placeholder="Years of experience" />
-                    </div>
-
-                    <div class="form-group">
-                        <label><i class="fas fa-align-left"></i> Bio</label>
-                        <textarea name="Bio" class="form-control" placeholder="Short bio about the trainer..."></textarea>
-                    </div> *@
-
                     <div class="form-group">
                         <label><i class="fas fa-user"></i> Image Link</label>
                         <input asp-for="ImgPath" type="file" class="form-control" />
@@ -546,5 +520,3 @@
         });
         }
     </script>
-</body>
-</html>
